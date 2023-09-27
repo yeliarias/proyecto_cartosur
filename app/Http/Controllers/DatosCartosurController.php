@@ -35,8 +35,10 @@ class DatosCartosurController extends Controller
      */
     public function store(Request $request)
     {
-        $datos_cartosur = request()->all();
-        return response()->json($datos_cartosur);
+        //$datoscartosur = request()->all();
+        $datosCartosur = request()->except('_token');
+        datos_cartosur::insert($datosCartosur);
+        return response()->json($datosCartosur);
     }
 
     /**

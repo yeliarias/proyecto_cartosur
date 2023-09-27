@@ -42,5 +42,5 @@
 <label for="txt"> Observaciones </label>
 <input type="text" name="txt" id="txt">
 <br>
-<input type="submit" name="registrar">
+<input type="submit" value="registrar">
 </form>
